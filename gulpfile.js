@@ -6,7 +6,7 @@ var gulp = require('gulp'),
 
  
 gulp.task('compress', function() {
-  gulp.src('js/*.js')
+  gulp.src('typed.js')
     .pipe(uglify())
     .pipe(rename('typed.min.js'))
     .pipe(gulp.dest('dist'))
